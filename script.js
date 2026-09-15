@@ -216,7 +216,7 @@ const gifts = [
   { id:28, 
     name: "MOP para limpeza", 
     price: 100, 
-    image: "img/mop.jpg", 
+    image: "img/Mop.jpg", 
     description: "Um presente =.", 
     available: true, 
     tag: "SIMBÓLICO" },
