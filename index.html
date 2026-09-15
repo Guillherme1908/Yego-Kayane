@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lista de presentes de casamento de Yêgo e Kayane.">
+  <title>Yêgo & Kayane — Lista de Presentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="floral floral-top">✦</div>
+    <div class="hero-inner">
+      <p class="eyebrow">LISTA DE PRESENTES</p>
+      <h1>Yêgo <span>&amp;</span> Kayane</h1>
+      <div class="ornament"><i></i><b>♥</b><i></i></div>
+      <p class="hero-copy">Escolha um presente e faça parte desse momento tão especial.</p>
+      <a href="#presentes" class="btn btn-primary">VER PRESENTES</a>
+    </div>
+    <div class="hero-bottom-leaves">❧</div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="section-kicker">COM MUITO CARINHO</p>
+      <h2>Um presente para cada momento</h2>
+      <p>
+        Criamos uma lista descontraída para você escolher como quer presentear
+        <strong>Yêgo e Kayane</strong>. Cada contribuição será recebida com muito carinho.
+      </p>
+    </section>
+
+    <section id="presentes" class="gifts-section">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">ESCOLHA SEU PRESENTE</p>
+          <h2>Lista de presentes</h2>
+        </div>
+        <div class="counter"><span id="availableCount">0</span> disponíveis</div>
+      </div>
+
+      <div id="giftGrid" class="gift-grid"></div>
+    </section>
+
+    <section class="how-it-works">
+      <p class="section-kicker">É BEM SIMPLES</p>
+      <h2>Como presentear</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Escolha</h3><p>Encontre o presente que mais combina com você.</p></article>
+        <article><span>02</span><h3>Preencha</h3><p>Informe seu nome e telefone. A mensagem é opcional.</p></article>
+        <article><span>03</span><h3>Envie</h3><p>O WhatsApp será aberto com os dados do seu presente para o casal.</p></article>
+      </div>
+    </section>
+
+    <section class="couple-note">
+      <div class="seal">YK</div>
+      <p>“Juntos por um propósito maior.”</p>
+      <h2>Yêgo &amp; Kayane</h2>
+      <span>27.11.2026 · Eusébio/CE</span>
+    </section>
+  </main>
+
+  <footer>
+    <p>Com amor, fé e família — para sempre.</p>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" type="button" data-close aria-label="Fechar">×</button>
+      <p class="section-kicker">SEU PRESENTE</p>
+      <h2 id="modalTitle">Presentear</h2>
+      <div class="selected-gift">
+        <span id="modalIcon">🎁</span>
+        <div><strong id="modalGiftName"></strong><small id="modalGiftPrice"></small></div>
+      </div>
+
+      <form id="giftForm">
+        <label>Seu nome
+          <input id="guestName" name="guestName" type="text" placeholder="Digite seu nome" required maxlength="80">
+        </label>
+        <label>Telefone / WhatsApp
+          <input id="guestPhone" name="guestPhone" type="tel" placeholder="(85) 99999-9999" required maxlength="20">
+        </label>
+        <label>Mensagem <span>(opcional)</span>
+          <textarea id="guestMessage" name="guestMessage" rows="4" maxlength="300" placeholder="Escreva uma mensagem para o casal..."></textarea>
+        </label>
+        <label class="check">
+          <input type="checkbox" required>
+          <span>Confirmo que quero presentear este item.</span>
+        </label>
+        <button class="btn btn-whatsapp" type="submit">ENVIAR PELO WHATSAPP <span>↗</span></button>
+        <p class="form-hint">Ao concluir, o WhatsApp será aberto com a mensagem pronta para enviar ao casal.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
